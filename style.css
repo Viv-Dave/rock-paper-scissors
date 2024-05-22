@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.play-again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
