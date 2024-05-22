@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="background">
     <div class = "container">
-    <h1> Welcome to Rock Paper Scissors </h1>
-    <div class = "mini"><h3> Choose! </h1></div>
+    <div><h1 class = "header"> Welcome to Rock Paper Scissors </h1></div>
+    <div class = "text"><h3> Choose! </h1></div>
     </div>
     <div class = "button-container">
-        <button id = "btnRock"> Rock </button>
-        <button id= "btnPaper"> Paper </button>
-        <button id="btnScissors"> Scissors </button>
+        <button id = "btnRock" class="button"> Rock </button>
+        <button id= "btnPaper" class = "button"> Paper </button>
+        <button id="btnScissors" class = "button"> Scissors </button>
     </div>
     <div class = "container"> 
-        <div id = "DisplayChoice"></div>
-        <div id = "DisplayCompChoice"> </div>
-        <div id = "DisplayWinner"></div>
+        <div id = "DisplayChoice" class = "text"></div>
+        <div id = "DisplayCompChoice" class = "text"> </div>
+        <div id = "DisplayWinner" class = "text"></div>
     </div>
-    <div class = "play-again"><button id = "playAgainBtn"> Play Again </button></div>
-    <!-- Displaying Winner -->
-    <script src="/script.js"></script>
+    <div class = "play-again"><button id = "playAgainBtn" class = "button"> Play Again </button></div>
+    <script src="script.js" type="text/JavaScript"/></script>
 </body>
 </html>

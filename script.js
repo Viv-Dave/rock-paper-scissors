@@ -42,11 +42,11 @@ function updateWinner(humanpoints) { // Function to calculate and display winner
     const displayWinner = document.getElementById("DisplayWinner");
   
     if (winner === 0) {
-      displayWinner.innerText = "Winner: Tie";
+      displayWinner.innerText = "A tie huh?";
     } else if (winner === 1) {
-      displayWinner.innerText = "Winner: Human Wins";
+      displayWinner.innerText = "Congrats!! You've defeated the mighty computer";
     } else {
-      displayWinner.innerText = "Winner: Computer Wins";
+      displayWinner.innerText = "Computer Wins, better luck next time human :-p";
     }
   }
   const playAgainBtn = document.getElementById("playAgainBtn");
