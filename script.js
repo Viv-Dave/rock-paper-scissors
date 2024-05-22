@@ -4,14 +4,17 @@ const btnRock = document.getElementById("btnRock");
 const btnPaper = document.getElementById("btnPaper");
 const btnScissors = document.getElementById("btnScissors")
 btnRock.addEventListener('click', function() {
+    resetDisplay()
     const humanpoints = getHumanChoice("Rock");
-    updateWinner(humanpoints);
+    updateWinner(humanpoints); 
 })
 btnPaper.addEventListener('click', function() {
+    resetDisplay();
     const humanpoints = getHumanChoice("Paper");
     updateWinner(humanpoints);
 })
 btnScissors.addEventListener('click', function() {
+  resetDisplay();
     const humanpoints = getHumanChoice("Scissors")
     updateWinner(humanpoints);
 }
@@ -57,3 +60,9 @@ playAgainBtn.addEventListener('click', function() {
   document.getElementById('DisplayCompChoice').innerText = ""; 
   document.getElementById('DisplayWinner').innerText = ""; 
 });
+function resetDisplay() {
+  document.getElementById('DisplayChoice').innerText = "";
+  document.getElementById('DisplayCompChoice').innerText = ""; 
+  document.getElementById('DisplayWinner').innerText = "";
+  integerchoice = getRandInt(3); // Reset computer's choice
+}
